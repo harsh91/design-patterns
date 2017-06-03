@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass name="abtsractfactory.AbstractWidgetFactory"
+        x="792" y="279"/>
+    <CommunicationClass name="concreteproduct.LinuxMenu" x="187" y="386">
+        <Extension destinationClassName="abstractproduct.AbstractMenu"/>
+    </CommunicationClass>
+    <CommunicationClass name="concreteproduct.WindowsMenu" x="151" y="577">
+        <Extension destinationClassName="abstractproduct.AbstractMenu"/>
+    </CommunicationClass>
+    <CommunicationClass name="abstractproduct.AbstractFooter" x="575" y="300"/>
+    <CommunicationClass name="client.Client" x="644" y="34">
+        <Communication destinationClassName="abtsractfactory.AbstractWidgetFactory"/>
+        <Communication destinationClassName="abstractproduct.AbstractFooter"/>
+        <Communication destinationClassName="abstractproduct.AbstractMenu"/>
+    </CommunicationClass>
+    <CommunicationClass name="concretefactory.WindowsFactory" x="26" y="700">
+        <Extension destinationClassName="abtsractfactory.AbstractWidgetFactory"/>
+    </CommunicationClass>
+    <CommunicationClass name="abstractproduct.AbstractMenu" x="407" y="212"/>
+    <CommunicationClass name="concreteproduct.LinuxFooter" x="24" y="394">
+        <Extension destinationClassName="abstractproduct.AbstractFooter"/>
+    </CommunicationClass>
+    <CommunicationClass name="concreteproduct.WindowsFooter" x="271" y="698">
+        <Extension destinationClassName="abstractproduct.AbstractFooter"/>
+    </CommunicationClass>
+    <CommunicationClass name="concretefactory.LinuxFactory" x="104" y="288">
+        <Extension destinationClassName="abtsractfactory.AbstractWidgetFactory"/>
+    </CommunicationClass>
+</ClassDiagram>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_Vs7MMLU7EeaHqqBA29NS3g" name="question1">
+    <eAnnotations xmi:id="_V7zVsLU7EeaHqqBA29NS3g" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_V7zVsbU7EeaHqqBA29NS3g" source="codegen">
+        <details xmi:id="_V7zVsrU7EeaHqqBA29NS3g" key="codegenDirectory" value="/question1/src"/>
+        <details xmi:id="_WkfGULU7EeaHqqBA29NS3g" key="AssociatedSourceCode" value="/question1/src/question1/Analog.java;4170215950/1;/question1/src/question1/Client.java;3067733165/1;/question1/src/question1/Component.java;1421727440/1;/question1/src/question1/DecoratorOne.java;3916092447/1;/question1/src/question1/DecoratorTwo.java;2174932339/1;/question1/src/question1/Digital.java;2124856590/1;/question1/src/question1/Strategy.java;2782520699/1;/question1/src/question1/StrategyOne.java;1626676640/1;/question1/src/question1/StrategyTwo.java;2204417796/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_WH2NoLU7EeaHqqBA29NS3g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_WH2NobU7EeaHqqBA29NS3g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_WH20sLU7EeaHqqBA29NS3g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_WH20sbU7EeaHqqBA29NS3g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_WH20srU7EeaHqqBA29NS3g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_WH20s7U7EeaHqqBA29NS3g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_WH3bwLU7EeaHqqBA29NS3g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_WH3bwbU7EeaHqqBA29NS3g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_WH4C0LU7EeaHqqBA29NS3g">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_WH-wgLU7EeaHqqBA29NS3g" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_WH-wgbU7EeaHqqBA29NS3g" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_WJ3m4LU7EeaHqqBA29NS3g" name="Date"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_WIGFQLU7EeaHqqBA29NS3g" name="question1">
+      <packagedElement xmi:type="uml:Class" xmi:id="_WIyo0LU7EeaHqqBA29NS3g" name="Analog">
+        <generalization xmi:id="_WJ7RQLU7EeaHqqBA29NS3g" general="_WJM4gLU7EeaHqqBA29NS3g"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKLv8LU7EeaHqqBA29NS3g" name="Analog" specification="_WJ6DILU7EeaHqqBA29NS3g">
+          <ownedParameter xmi:id="_WKLv8bU7EeaHqqBA29NS3g" name="strategy" type="_WJfMYLU7EeaHqqBA29NS3g"/>
+          <ownedParameter xmi:id="_WKLv8rU7EeaHqqBA29NS3g" type="_WIyo0LU7EeaHqqBA29NS3g" direction="return"/>
+          <language>java</language>
+          <body>super(strategy);&#xD;
+		this.draw();&#xD;
+		strategy.decide();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKOMMLU7EeaHqqBA29NS3g" name="draw" specification="_WJAEMLU7EeaHqqBA29NS3g">
+          <language>java</language>
+          <body>System.out.println(&quot;-----------------------------------------------------&quot;);&#xD;
+		System.out.println(&quot;Analog&quot;);&#xD;
+		System.out.println(new Date());&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_WJAEMLU7EeaHqqBA29NS3g" name="draw" method="_WKOMMLU7EeaHqqBA29NS3g"/>
+        <ownedOperation xmi:id="_WJ6DILU7EeaHqqBA29NS3g" name="Analog" method="_WKLv8LU7EeaHqqBA29NS3g">
+          <eAnnotations xmi:id="_WJ6DIrU7EeaHqqBA29NS3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_WJ6qMLU7EeaHqqBA29NS3g" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_WJ6DIbU7EeaHqqBA29NS3g" name="strategy" type="_WJfMYLU7EeaHqqBA29NS3g"/>
+          <ownedParameter xmi:id="_WJ6qMbU7EeaHqqBA29NS3g" type="_WIyo0LU7EeaHqqBA29NS3g" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WJJ1MLU7EeaHqqBA29NS3g" name="Client">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKOzQLU7EeaHqqBA29NS3g" name="main" specification="_WJLDULU7EeaHqqBA29NS3g">
+          <ownedParameter xmi:id="_WKOzQbU7EeaHqqBA29NS3g" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WKOzQrU7EeaHqqBA29NS3g" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>new DecoratorOne(new Analog(new StrategyOne()));&#xD;
+		new DecoratorOne(new DecoratorTwo(new Analog(new StrategyOne())));&#xD;
+		new DecoratorTwo(new Analog(new StrategyOne()));&#xD;
+		new DecoratorTwo(new DecoratorOne(new Analog(new StrategyOne())));&#xD;
+		&#xD;
+		new DecoratorOne(new Digital(new StrategyOne()));&#xD;
+		new DecoratorOne(new DecoratorTwo(new Digital(new StrategyOne())));&#xD;
+		new DecoratorTwo(new Digital(new StrategyOne()));&#xD;
+		new DecoratorTwo(new DecoratorOne(new Digital(new StrategyOne())));&#xD;
+		&#xD;
+		new DecoratorOne(new Analog(new StrategyTwo()));&#xD;
+		new DecoratorOne(new DecoratorTwo(new Analog(new StrategyTwo())));&#xD;
+		new DecoratorTwo(new Analog(new StrategyTwo()));&#xD;
+		new DecoratorTwo(new DecoratorOne(new Analog(new StrategyTwo())));&#xD;
+		&#xD;
+		new DecoratorOne(new Digital(new StrategyTwo()));&#xD;
+		new DecoratorOne(new DecoratorTwo(new Digital(new StrategyTwo())));&#xD;
+		new DecoratorTwo(new Digital(new StrategyTwo()));&#xD;
+		new DecoratorTwo(new DecoratorOne(new Digital(new StrategyTwo())));&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_WJLDULU7EeaHqqBA29NS3g" name="main" isStatic="true" method="_WKOzQLU7EeaHqqBA29NS3g">
+          <ownedParameter xmi:id="_WJLqYLU7EeaHqqBA29NS3g" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WJMRcLU7EeaHqqBA29NS3g" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WJM4gLU7EeaHqqBA29NS3g" name="Component" isAbstract="true">
+        <ownedOperation xmi:id="_WJOtsLU7EeaHqqBA29NS3g" name="draw" isAbstract="true"/>
+        <ownedOperation xmi:id="_WJ74ULU7EeaHqqBA29NS3g" name="Component">
+          <eAnnotations xmi:id="_WJ8fYbU7EeaHqqBA29NS3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_WJ8fYrU7EeaHqqBA29NS3g" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_WJ8fYLU7EeaHqqBA29NS3g" name="component" type="_WJM4gLU7EeaHqqBA29NS3g"/>
+          <ownedParameter xmi:id="_WJ9GcbU7EeaHqqBA29NS3g" type="_WJM4gLU7EeaHqqBA29NS3g" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_WJ9tgLU7EeaHqqBA29NS3g" name="Component">
+          <eAnnotations xmi:id="_WJ-UkLU7EeaHqqBA29NS3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_WJ-UkbU7EeaHqqBA29NS3g" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_WJ9tgbU7EeaHqqBA29NS3g" name="strategy" type="_WJfMYLU7EeaHqqBA29NS3g"/>
+          <ownedParameter xmi:id="_WJ-Uk7U7EeaHqqBA29NS3g" type="_WJM4gLU7EeaHqqBA29NS3g" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WJRJ8LU7EeaHqqBA29NS3g" name="DecoratorOne">
+        <generalization xmi:id="_WKAJwLU7EeaHqqBA29NS3g" general="_WJM4gLU7EeaHqqBA29NS3g"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKPaULU7EeaHqqBA29NS3g" name="DecoratorOne" specification="_WJ-7oLU7EeaHqqBA29NS3g">
+          <ownedParameter xmi:id="_WKQBYLU7EeaHqqBA29NS3g" name="component" type="_WJM4gLU7EeaHqqBA29NS3g"/>
+          <ownedParameter xmi:id="_WKQBYbU7EeaHqqBA29NS3g" type="_WJRJ8LU7EeaHqqBA29NS3g" direction="return"/>
+          <language>java</language>
+          <body>super(component);&#xD;
+		draw();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKQBYrU7EeaHqqBA29NS3g" name="draw" specification="_WJSYELU7EeaHqqBA29NS3g">
+          <language>java</language>
+          <body>System.out.println(&quot;Decorator One&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_WJSYELU7EeaHqqBA29NS3g" name="draw" method="_WKQBYrU7EeaHqqBA29NS3g"/>
+        <ownedOperation xmi:id="_WJ-7oLU7EeaHqqBA29NS3g" name="DecoratorOne" method="_WKPaULU7EeaHqqBA29NS3g">
+          <eAnnotations xmi:id="_WJ_isLU7EeaHqqBA29NS3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_WJ_isbU7EeaHqqBA29NS3g" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_WJ-7obU7EeaHqqBA29NS3g" name="component" type="_WJM4gLU7EeaHqqBA29NS3g"/>
+          <ownedParameter xmi:id="_WJ_isrU7EeaHqqBA29NS3g" type="_WJRJ8LU7EeaHqqBA29NS3g" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WJWCcLU7EeaHqqBA29NS3g" name="DecoratorTwo">
+        <generalization xmi:id="_WKBX4LU7EeaHqqBA29NS3g" general="_WJM4gLU7EeaHqqBA29NS3g"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKQocLU7EeaHqqBA29NS3g" name="DecoratorTwo" specification="_WKAJwbU7EeaHqqBA29NS3g">
+          <ownedParameter xmi:id="_WKQocbU7EeaHqqBA29NS3g" name="component" type="_WJM4gLU7EeaHqqBA29NS3g"/>
+          <ownedParameter xmi:id="_WKQocrU7EeaHqqBA29NS3g" type="_WJWCcLU7EeaHqqBA29NS3g" direction="return"/>
+          <language>java</language>
+          <body>super(component);&#xD;
+		draw();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKRPgLU7EeaHqqBA29NS3g" name="draw" specification="_WJXQkLU7EeaHqqBA29NS3g">
+          <language>java</language>
+          <body>System.out.println(&quot;Decorator Two&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_WJXQkLU7EeaHqqBA29NS3g" name="draw" method="_WKRPgLU7EeaHqqBA29NS3g"/>
+        <ownedOperation xmi:id="_WKAJwbU7EeaHqqBA29NS3g" name="DecoratorTwo" method="_WKQocLU7EeaHqqBA29NS3g">
+          <eAnnotations xmi:id="_WKAw0bU7EeaHqqBA29NS3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_WKAw0rU7EeaHqqBA29NS3g" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_WKAw0LU7EeaHqqBA29NS3g" name="component" type="_WJM4gLU7EeaHqqBA29NS3g"/>
+          <ownedParameter xmi:id="_WKAw07U7EeaHqqBA29NS3g" type="_WJWCcLU7EeaHqqBA29NS3g" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WJa68LU7EeaHqqBA29NS3g" name="Digital">
+        <generalization xmi:id="_WKB-9LU7EeaHqqBA29NS3g" general="_WJM4gLU7EeaHqqBA29NS3g"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKRPgbU7EeaHqqBA29NS3g" name="Digital" specification="_WKBX4bU7EeaHqqBA29NS3g">
+          <ownedParameter xmi:id="_WKRPgrU7EeaHqqBA29NS3g" name="strategy" type="_WJfMYLU7EeaHqqBA29NS3g"/>
+          <ownedParameter xmi:id="_WKRPg7U7EeaHqqBA29NS3g" type="_WJa68LU7EeaHqqBA29NS3g" direction="return"/>
+          <language>java</language>
+          <body>super(strategy);&#xD;
+		this.draw();&#xD;
+		strategy.decide();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKR2kLU7EeaHqqBA29NS3g" name="draw" specification="_WJcwILU7EeaHqqBA29NS3g">
+          <language>java</language>
+          <body>System.out.println(&quot;-----------------------------------------------------&quot;);&#xD;
+		System.out.println(&quot;Digital&quot;);&#xD;
+		System.out.println(new Date());&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_WJcwILU7EeaHqqBA29NS3g" name="draw" method="_WKR2kLU7EeaHqqBA29NS3g"/>
+        <ownedOperation xmi:id="_WKBX4bU7EeaHqqBA29NS3g" name="Digital" method="_WKRPgbU7EeaHqqBA29NS3g">
+          <eAnnotations xmi:id="_WKB-8bU7EeaHqqBA29NS3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_WKB-8rU7EeaHqqBA29NS3g" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_WKB-8LU7EeaHqqBA29NS3g" name="strategy" type="_WJfMYLU7EeaHqqBA29NS3g"/>
+          <ownedParameter xmi:id="_WKB-87U7EeaHqqBA29NS3g" type="_WJa68LU7EeaHqqBA29NS3g" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WJfMYLU7EeaHqqBA29NS3g" name="Strategy" isAbstract="true">
+        <ownedOperation xmi:id="_WJgagLU7EeaHqqBA29NS3g" name="decide" isAbstract="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WJgagbU7EeaHqqBA29NS3g" name="StrategyOne">
+        <generalization xmi:id="_WKCmALU7EeaHqqBA29NS3g" general="_WJfMYLU7EeaHqqBA29NS3g"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKSdoLU7EeaHqqBA29NS3g" name="decide" specification="_WJhooLU7EeaHqqBA29NS3g">
+          <language>java</language>
+          <body>System.out.println(&quot;Implemented Strategy One&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_WJhooLU7EeaHqqBA29NS3g" name="decide" method="_WKSdoLU7EeaHqqBA29NS3g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WJkE4LU7EeaHqqBA29NS3g" name="StrategyTwo">
+        <generalization xmi:id="_WKDNELU7EeaHqqBA29NS3g" general="_WJfMYLU7EeaHqqBA29NS3g"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WKSdobU7EeaHqqBA29NS3g" name="decide" specification="_WJkr8LU7EeaHqqBA29NS3g">
+          <language>java</language>
+          <body>System.out.println(&quot;Implemented Strategy Two&quot;);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_WJkr8LU7EeaHqqBA29NS3g" name="decide" method="_WKSdobU7EeaHqqBA29NS3g"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_V73nILU7EeaHqqBA29NS3g">
+      <eAnnotations xmi:id="_V77RgLU7EeaHqqBA29NS3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_V8D0YLU7EeaHqqBA29NS3g" base_Package="_Vs7MMLU7EeaHqqBA29NS3g">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WJB5YLU7EeaHqqBA29NS3g" base_Element="_WJAEMLU7EeaHqqBA29NS3g"/>
+  <UMLLabProfile:Annotations xmi:id="_WJDHgLU7EeaHqqBA29NS3g" base_Element="_WJAEMLU7EeaHqqBA29NS3g">
+    <annotations xmi:id="_WJHY8LU7EeaHqqBA29NS3g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WJS_ILU7EeaHqqBA29NS3g" base_Element="_WJSYELU7EeaHqqBA29NS3g"/>
+  <UMLLabProfile:Annotations xmi:id="_WJTmMLU7EeaHqqBA29NS3g" base_Element="_WJSYELU7EeaHqqBA29NS3g">
+    <annotations xmi:id="_WJTmMbU7EeaHqqBA29NS3g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WJYesLU7EeaHqqBA29NS3g" base_Element="_WJXQkLU7EeaHqqBA29NS3g"/>
+  <UMLLabProfile:Annotations xmi:id="_WJZFwLU7EeaHqqBA29NS3g" base_Element="_WJXQkLU7EeaHqqBA29NS3g">
+    <annotations xmi:id="_WJZFwbU7EeaHqqBA29NS3g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WJdXMLU7EeaHqqBA29NS3g" base_Element="_WJcwILU7EeaHqqBA29NS3g"/>
+  <UMLLabProfile:Annotations xmi:id="_WJd-QLU7EeaHqqBA29NS3g" base_Element="_WJcwILU7EeaHqqBA29NS3g">
+    <annotations xmi:id="_WJd-QbU7EeaHqqBA29NS3g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WJiPsLU7EeaHqqBA29NS3g" base_Element="_WJhooLU7EeaHqqBA29NS3g"/>
+  <UMLLabProfile:Annotations xmi:id="_WJi2wLU7EeaHqqBA29NS3g" base_Element="_WJhooLU7EeaHqqBA29NS3g">
+    <annotations xmi:id="_WJi2wbU7EeaHqqBA29NS3g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WJlTALU7EeaHqqBA29NS3g" base_Element="_WJkr8LU7EeaHqqBA29NS3g"/>
+  <UMLLabProfile:Annotations xmi:id="_WJlTAbU7EeaHqqBA29NS3g" base_Element="_WJkr8LU7EeaHqqBA29NS3g">
+    <annotations xmi:id="_WJl6ELU7EeaHqqBA29NS3g" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_WJ41ALU7EeaHqqBA29NS3g" base_Element="_WJ3m4LU7EeaHqqBA29NS3g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WJ9GcLU7EeaHqqBA29NS3g" base_Element="_WJ74ULU7EeaHqqBA29NS3g"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WJ-UkrU7EeaHqqBA29NS3g" base_Element="_WJ9tgLU7EeaHqqBA29NS3g"/>
+</xmi:XMI>

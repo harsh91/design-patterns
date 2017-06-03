@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Package name="abstractproduct" x="453" y="379"/>
+    <Package name="abtsractfactory" x="441" y="56">
+        <DependencyLink destination="abstractproduct"/>
+        <DependencyLink destination="concretefactory"/>
+    </Package>
+    <Package name="client" x="646" y="171">
+        <DependencyLink destination="abstractproduct"/>
+        <DependencyLink destination="abtsractfactory"/>
+    </Package>
+    <Package name="concretefactory" x="21" y="50">
+        <DependencyLink destination="abstractproduct"/>
+        <DependencyLink destination="abtsractfactory"/>
+        <DependencyLink destination="concreteproduct"/>
+    </Package>
+    <Package name="concreteproduct" x="12" y="390">
+        <DependencyLink destination="abstractproduct"/>
+    </Package>
+</PackageAnalysis>
